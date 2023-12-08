@@ -20,3 +20,12 @@ optionsButtons.forEach(button => {
         modifyText(button.id, false, null);
     });
 });
+
+//change font color
+
+function changeTextColor() {
+    let color = colorPicker.value;
+    document.execCommand('foreColor', false, color);
+}
+
+
