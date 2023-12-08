@@ -10,17 +10,61 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Text Editor - [CT/2019/041]</title>
-</head>
+
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="style.css">
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    </head>
 
 <body>
 
-    <!--  Remove this div once you are started -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Start Your Work Here!</h1>
-                <hr>
-            </div>
+    <div class="">
+        <div class="toolbar bg-dark">
+            <button id="bold" class="option-button format">
+                <img src="Resources/bold-xxl.png" alt="Bold_icon" width="25px">
+            </button>
+
+            <button id="underline" class="option-button format">
+                <img src="Resources/format_underline_white_192x192.png" alt="Underline_icon" width="36px">
+            </button>
+
+            <button id="italic" class="option-button format">
+                <img src="Resources/italic-xxl.png" alt="Italic_icon" width="25px">
+            </button>
+
+            <button>
+                <div class="input-wrapper">
+                    <label for="color" class="fontColor">A</label></li>
+                    <input type="color" id="color" onchange="changeTextColor()">
+                </div>
+            </button>
+
+            <button id="justifyLeft" class="option-button align">
+                <img src="Resources/left.png" alt="align_left_icon" width="28px">
+            </button>
+            <button id="justifyCenter" class="option-button align">
+                <img src="Resources/center.png" alt="align_center_icon" width="28px">
+            </button>
+            <button id="justifyRight" class="option-button align">
+                <img src="Resources/right.png" alt="align_right_icon" width="28px">
+            </button>
+            <button id="justifyfull" class="option-button align">
+                <img src="Resources/justify.png" alt="align_justify_icon" width="28px">
+            </button>
+
+            <button id="undo" class="option-button">
+                <img src="Resources/undo-4-32.png" alt="undo_icon" width="28px">
+            </button>
+            <button id="redo" class="option-button">
+                <img src="Resources/action-redo-32.png" alt="redo_icon" width="28px">
+            </button>
+
+
+        </div>
+        <div contenteditable="true" id="text_input">
+
         </div>
     </div>
 
@@ -35,6 +79,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
 </body>
 <!-- Author: [W.A.T.Lakshani | [CT/2019/041] -->
 
